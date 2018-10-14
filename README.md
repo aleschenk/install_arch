@@ -19,7 +19,7 @@ root@archiso ~ # sgdisk -b=sgdisk-sda.bak
 
 ## CREATE GPT Table
 ```console
-root@archiso ~ # parted /tmp/part mklabel gpt
+root@archiso ~ # parted /dev/sda mklabel gpt
 ```
 
 ## PARTITIONS
