@@ -4,14 +4,13 @@
 ```console
 root@archiso ~ # ls /sys/firmware/efi/efivars
 ```
+If the directory does not exist, the system may be booted in BIOS or CSM mode.
 
 ## Backup MBR/GPT
 ### Option 1:
 ```console
 root@archiso ~ # sfdisk -d /dev/sda > sda.dump
 ```
-
-If the directory does not exist, the system may be booted in BIOS or CSM mode.
 
 ### Option 2:
 ```console
