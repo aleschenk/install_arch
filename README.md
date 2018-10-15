@@ -102,14 +102,14 @@ root@archiso ~ # cryptsetup -y -v luksFormat /dev/sdaX
 
 ### Default: 
 ```console
-cryptsetup -v --cipher aes-xts-plain64 --key-size 256 --hash sha256 --iter-time 2000 --use-urandom --verify-passphrase luksFormat device
+root@archiso ~ # cryptsetup -v --cipher aes-xts-plain64 --key-size 256 --hash sha256 --iter-time 2000 --use-urandom --verify-passphrase luksFormat device
 ```
 
 #### Unlocking/Mapping LUKS partitions with the device mapper
 #### The name could be prefix_label ex: crypt_root, crypt_home, crypt_var etc.
 #### cryptsetup open --type luks device [name]
 ```console
-cryptsetup open --type luks /dev/sda1 crypt_root
+root@archiso ~ # cryptsetup open --type luks /dev/sda1 crypt_root
 ```
 
 ## The name could be prefix_label ex: crypt_root, crypt_home, crypt_var etc.
