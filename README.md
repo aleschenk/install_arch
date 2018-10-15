@@ -44,7 +44,7 @@ root@archiso ~ # parted /dev/sda mklabel gpt
 
 ## PARTITIONS
 |                |        MBR       |        GPT       |
-|---------------:|-----------------:|-----------------:|
+|:--------------:|:----------------:|:----------------:|
 |   Dialog       |     fdisk        |      fdisk       |
 |                |     parted       |      gdisk       |
 |                |                  |      parted      |
