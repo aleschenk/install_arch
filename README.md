@@ -192,7 +192,10 @@ Uncomment: es_AR.UTF-8 UTF-8 in /etc/locale.gen
 Uncomment: es_AR ISO-8859-1 in /etc/locale.gen
 ```
 
-run: locale-gen
+run: 
+```console
+root@archiso ~ # locale-gen
+```
 
 Create the file "/etc/locale.conf" with this content:
 
@@ -230,6 +233,7 @@ It has to be before filesystems hook.
 HOOKS="... encrypt ... filesystems ..."
 
 ## BOOTLOADER / GRUB
+### "efibootmgr" is optional
 ```console
 root@archiso ~ # pacman -S grub efibootmgr
 ```
