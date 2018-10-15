@@ -219,7 +219,9 @@ LC_IDENTIFICATION=es_AR.UTF-8
 ## KEYBOARD
 
 Create the file "/etc/vconsole.conf" with this content:
+```bash
 KEYMAP=la-latin1
+```
 
 ## TIMEZONE
 ```console
